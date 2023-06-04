@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <title>HTML Task-8</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    </head>
+    </head>
+    <body>
+        <div class="signup">
+        <center>
+        <h2 class="title">Registration form</h2><br>
+        <form method="get">
+            <table>
+                <tr>
+                    <td class="cred">First Name</td><td><input type="text" size="50"/></td>
+                </tr>
+                <tr>
+                    <td class="cred">Last Name</td><td><input type="text" size="50" /></td>
+                </tr>
+                <tr>
+                    <td class="cred">Email</td><td><input type="email" size="50" /></td>
+                </tr>
+                <tr>
+                    <td class="cred">Password</td><td><input type="password" size="50" /></td>
+                </tr>
+                <tr>
+                    <td class="cred">Re-enter Password</td><td><input type="password" size="50" /></td>
+                </tr>
+                <tr>
+                    <td class="cred">Gender</td>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label><br>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label><br>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cred">Age</td><td><input type="text" size="50" /></td>
+                </tr>
+                <tr>
+                    <td class="cred">Phone Number</td><td><input type="tel" size="50" /></td>
+                </tr>
+                <tr>
+                    <td class="cred">Address</td><td ><textarea rows="4"></textarea></td>
+                </tr>
+                <tr>
+                    <td class="cred">State</td><td><input type="text" size="50" /></td>
+                </tr>
+                <tr>
+                    <td class="cred">First Name</td><td><input type="text" size="50" /></td>
+                </tr>
+                <tr>
+                    <td class="cred">Country</td>
+                    <td>
+                        <select id="cars" name="cars" >
+                            <option value="" disabled selected>Choose your country</option>
+                            <option value="America">America</option>
+                            <option value="Brazil">Brazil</option>
+                            <option value="India">India</option>
+                            <option value="Zimbabwe">Zimbabwe</option>
+                            </select>
+                    </td>  
+                </tr>
+                <tr>
+                    <td class="cred">Languages known</td>
+                    <td>
+                        <input type="checkbox" name="English" value="English">
+                        <label for="English">English</label>
+                        <input type="checkbox" name="Kannada" value="Kannada">
+                        <label for="Kannada">Kannada</label>
+                        <input type="checkbox" name="Hindi" value="Hindi">
+                        <label for="Hindi">Hindi</label>
+                        <input type="checkbox" name="Telugu" value="Telugu">
+                        <label for="Telugu">Telugu</label>
+                    </td><br>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                            <input type="checkbox" name="Agree" value="Agree">
+                            <label for="Agree">Hereby I declare all the given details are true</label> 
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: right;">
+                    Log in to <a href="#">Ethnus</a> Website
+                </td>
+                </tr>
+                
+                
+            </table>
+        </center>
+            <center><button class="register" type="submit">REGISTER</button></center>
+
+        </form>
+        </div>
+    </body>
+    <style>
+        .cred{
+            text-align: center;
+            font-weight: bolder;
+            
+        }
+
+        table,td{
+            border:1px solid black;
+            border-collapse: collapse;
+        }
+
+        textarea{
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+
+    
+</html>

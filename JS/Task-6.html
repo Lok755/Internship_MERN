@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>JS Task-6</title>
+    </head>
+    <body>
+
+        <input id="ipstring" type="text" placeholder="Enter a string" />
+        <button onclick="sort_letters()">sort</button><br><br>
+        After sorting:<br><span id="opstring"></span>
+        <script>
+            function sort_letters()
+            {
+                // str = prompt('Enter a string');
+                str = document.getElementById('ipstring').value;
+                const letters = String(str).split('').sort().join('');
+                // letters.sort().join('');
+                document.getElementById('opstring').innerHTML = letters;
+                
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>JS Task-1</title>
+    </head>
+    <body>
+        <div class="box">
+            <button onclick="f1()">show date</button><br>
+            <span id="res_date"></span><br><br>
+            <button onclick="f2()">show Time</button><br>
+            <span id="res_time"></span>
+        </div>
+
+        <script>
+             d = new Date();
+            function f1(){
+                date = d.getDate();
+                month = d.getMonth();
+                year = d.getFullYear();
+                const resd = [date,'/',month,'/',year].join("")
+                document.getElementById('res_date').innerHTML=resd;
+                
+            }
+
+            function f2(){
+                document.getElementById('res_time').innerHTML=d;
+            }
+        </script>
+
+        <style>
+            .box{
+                margin: 200px 500px;
+            }
+
+        </style>
+    </body>
+</html>

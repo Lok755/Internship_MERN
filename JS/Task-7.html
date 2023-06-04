@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>JS Task-7</title>
+    </head>
+    <body>
+        <div class="box">
+            <table>
+                <tr>
+                    <td> 1st Number:</td> 
+                    <td><input id="value1" type="text"/><br></td>
+                </tr>
+                <tr>
+                    <td> 2nd Number:</td> 
+                    <td><input id="value2" type="text"/><br></td>
+                </tr>
+            </table>
+            <br>
+            
+            <input type="button" onClick="multiply()" Value="Multiply" />
+            <input type="button" onClick="divide()" Value="Divide" /><br>
+            
+            <p>The Result is : <br>
+                <span id="result"></span>
+            </p>
+        </div>
+
+        
+    
+        <script>
+            function multiply(){
+                a = document.getElementById("value1").value; 
+                b = document.getElementById("value2").value;
+                document.getElementById("result").innerHTML = a*b;
+            }
+            function divide(){
+                a = document.getElementById("value1").value; 
+                b = document.getElementById("value2").value;
+                document.getElementById("result").innerHTML = a/b;
+            }
+
+        </script>
+
+        <style>
+            .box{
+                margin: 300px 600px;
+                border: 2px solid black;
+                padding: 7px;
+            }
+        </style>
+       
+    </body>
+
+    
+</html>
